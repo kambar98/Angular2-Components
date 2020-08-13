@@ -3,13 +3,14 @@
     <p>Add new Servers or blueprints!</p>
     <label>Server Name</label>
     <!-- <input type="text" class="form-control" [(ngModel)]="newServerName">-->
-    <input
-           type="text"
+    <input type="text"
            class="form-control"
-           #serverNameInput
-          >
+           #serverNameInput>
     <label>Server Content</label>
-    <input type="text" class="form-control" [(ngModel)]="newServerContent">
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
+    <input type="text"
+           class="form-control"
+           #serverContentInput />
     <br>
     <button class="btn btn-primary"
             (click)="onAddServer(serverNameInput)">
