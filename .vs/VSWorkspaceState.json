@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\e2e",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\basic-highlight",
+    "\\src\\app\\better-highlight"
+  ],
+  "SelectedNode": "\\src\\app\\better-highlight\\better-highlight.directive.ts",
+  "PreviewInSolutionExplorer": false
+}
