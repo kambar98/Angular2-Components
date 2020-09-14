@@ -5,9 +5,11 @@
     "\\src\\app",
     "\\src\\app\\home",
     "\\src\\app\\servers",
+    "\\src\\app\\servers\\edit-server",
+    "\\src\\app\\servers\\server",
     "\\src\\app\\users",
     "\\src\\app\\users\\user"
   ],
-  "SelectedNode": "\\src\\app\\users\\user\\user.component.ts",
+  "SelectedNode": "\\src\\app\\servers\\edit-server\\edit-server.component.html",
   "PreviewInSolutionExplorer": false
 }
