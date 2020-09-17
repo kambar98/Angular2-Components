@@ -2,7 +2,9 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
       <form (ngSubmit)="onSubmit(f)" #f="ngForm">
-        <div id="user-data">
+        <div id="user-data"
+             ngModelGroup="userData"
+             #userData="ngModelGroup">
           <div class="form-group">
             <label for="username">Username</label>
             <input type="text"
@@ -27,6 +29,7 @@
           </div>
           <p *ngIf="">Please enter a valid value!</p>
         </div>
+        <p *ngIf="!userData.valid && userData.touched">User Data is invalid</p>
         <div class="form-group">
           <label for="secret">Secret Questions</label>
           <select id="secret"
@@ -46,6 +49,16 @@
 
         </div>
         <p> You reply: {{answer}}</p>
+        <div class="radio" *ngFor="let gender of genders">
+          <label>
+            <input type="radio"
+                   name="gender"
+                   ngModel
+                   [value]="gender"/>
+            {{gender}}
+            
+          </label>
+        </div>
         <button class="btn btn-primary"
                 type="submit"
                 [disabled]="!f.valid">
